@@ -12,7 +12,7 @@ replicaCount: 1
 image:
   pullPolicy: Always
   registry: Quay
-  host: quay-4jb4z.apps.cluster-4jb4z.4jb4z.sandbox1586.opentlc.com
+  host: {{ gitea_customize_quay_server }}
   organization: quayadmin
   name: customers
   # Overrides the image tag whose default is the chart appVersion.
